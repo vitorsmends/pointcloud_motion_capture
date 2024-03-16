@@ -13,7 +13,10 @@ class PointCloudProcessor : public rclcpp::Node
 {
 public:
     PointCloudProcessor() : Node("point_cloud_processor"),
+                            previous_position_(Eigen::Vector4f::Zero()),
+                            previous_velocity_(Eigen::Vector3f::Zero()),
                             previous_time_(this->now()),
+                            previous_velocity_time_(this->now()),
                             position_samples_(5),
                             velocity_samples_(5),
                             publish_rate_(10.0)
@@ -43,7 +46,7 @@ private:
 
     void updatePositionSamples(const Eigen::Vector4f &centroid)
     {
-        if (position_queue_.size() >= static_cast<std::queue<Eigen::Vector4f>::size_type>(position_samples_))
+        if (static_cast<int>(position_queue_.size()) >= position_samples_)
         {
             position_queue_.pop();
         }
@@ -64,7 +67,7 @@ private:
 
     void updateVelocitySamples(const Eigen::Vector3f &velocity)
     {
-        if (velocity_queue_.size() >= static_cast<std::queue<Eigen::Vector3f>::size_type>(velocity_samples_))
+        if (static_cast<int>(velocity_queue_.size()) >= velocity_samples_)
         {
             velocity_queue_.pop();
         }
