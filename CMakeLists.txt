@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(motion_capture_system)
+project(pointcloud_motion_capure)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
