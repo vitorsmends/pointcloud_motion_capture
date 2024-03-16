@@ -21,13 +21,17 @@ include_directories(
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 add_executable(point_cloud_reader src/point_cloud_reader.cpp)
+add_executable(object_detection src/object_detection.cpp)
 
 ament_target_dependencies(point_cloud_reader ament_cmake rclcpp sensor_msgs Open3D pcl_conversions)
+ament_target_dependencies(object_detection ament_cmake rclcpp sensor_msgs geometry_msgs Open3D pcl_conversions)
 
 target_link_libraries(point_cloud_reader Open3D::Open3D ${PCL_LIBRARIES})
+target_link_libraries(object_detection Open3D::Open3D ${PCL_LIBRARIES})
 
 install(TARGETS
   point_cloud_reader
+  object_detection
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
