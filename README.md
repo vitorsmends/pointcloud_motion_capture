@@ -69,5 +69,5 @@ Contributions to the development of this package are welcome! If you have any su
 
 ## Contact
 
-- **Email:** [vitor.mendes@ieee.org](My Email: vitor.mendes@ieee.org)
-- **LinkedIn:** [https://www.linkedin.com/in/vitorsmends/](LinkedIn)
+- **Email:** [vitor.mendes@ieee.org]
+- **LinkedIn:** [https://www.linkedin.com/in/vitorsmends/]
