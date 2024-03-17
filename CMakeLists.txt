@@ -9,7 +9,6 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(Open3D REQUIRED)
 find_package(PCL REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(yaml-cpp REQUIRED)
@@ -25,7 +24,6 @@ add_executable(motion_capture src/motion_capture.cpp)
 ament_target_dependencies(point_cloud_reader 
   rclcpp 
   sensor_msgs 
-  Open3D 
   pcl_conversions
 )
 
@@ -33,7 +31,6 @@ ament_target_dependencies(motion_capture
   rclcpp 
   sensor_msgs 
   geometry_msgs 
-  Open3D 
   pcl_conversions
 )
 
