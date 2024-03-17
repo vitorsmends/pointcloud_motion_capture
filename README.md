@@ -39,6 +39,12 @@ To install the ros packages that were used, type:
 rosdep install --from-paths src -y --ignore-src
 ```
 
+### Building
+```bash
+cd <your_ros2_workspace>
+colcon build
+```
+
 ## Usage
 
 ### Launching the Package
