@@ -8,6 +8,17 @@
 Pointcloud Motion Capture is a ROS 2 package designed to process point clouds for capturing object movements. It detects objects using color filters and infers data about their position, velocity, and acceleration. 
 *This package was developed and tested in ROS 2 Humble.*
 
+
+## License
+
+This project is licensed under the [MIT License](LICENSE), which means you're free to use, copy, and modify the code, subject to certain conditions. See the LICENSE file for more details.
+
+**Author:** João Vitor S. Mendes\
+**Affiliation:** Brazilian Institute of Robotics - BIR (SENAI CIMATEC)\
+**Maintainer:** João Vitor S. Mendes, vitor.mendes@ieee.org
+
+The `softrobots_model_based_control` package has been tested under [ROS] Humble and Ubuntu 22.04. This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
+
 ## Installation
 
 Clone the repository into your ROS 2 workspace and build the package:
@@ -56,10 +67,6 @@ These nodes subscribe to the `/camera/camera/depth/color/points` topic of type `
 ## Contributing
 
 Contributions to the development of this package are welcome! If you have any suggestions, feature requests, or bug fixes, please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE), which means you're free to use, copy, and modify the code, subject to certain conditions. See the LICENSE file for more details.
 
 ## Contact
 
