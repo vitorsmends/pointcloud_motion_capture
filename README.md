@@ -33,15 +33,11 @@ To successfully compile and run this ROS 2 package, ensure that you have the fol
 
 - **yaml-cpp**: yaml-cpp is a YAML parser and emitter in C++. You can find the source code and installation instructions on the [yaml-cpp GitHub repository](https://github.com/jbeder/yaml-cpp).
 
-### Install dependencies
+### Install dependencies and Building
 To install the ros packages that were used, type:
 ```bash
-rosdep install --from-paths src -y --ignore-src
-```
-
-### Building
-```bash
 cd <your_ros2_workspace>
+rosdep install --from-paths src -y --ignore-src
 colcon build
 ```
 
