@@ -23,19 +23,11 @@ This project is licensed under the [MIT License](LICENSE), which means you're fr
 - **Description:** The robot moves at a velocity of 0.05 m/s, while the system estimates 0.04 m/s. The distance traveled was 0.8m, and the system measured 0.82m.
 
 <div class="media-container">
-  <div class="image-container">
-    <img src="./images/experiment-1/position.png" alt="Experiment 1 Position" width="320">
-  </div>
-  <div class="image-container">
-    <img src="./images/experiment-1/velocity.png" alt="Experiment 1 Velocity" width="320">
-  </div>
+  <p align="center">
+    <img src="./images/experiment-1.gif" alt="GIF Example">
+  </p>
+  <p align="center">Experiment 1 Video</p>
 
-  <div class="video-container">
-    <video width="320" height="240" controls>
-      <source src="./images/experiment-1/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
 </div>
 
 ### Experiment 2
@@ -43,31 +35,24 @@ This project is licensed under the [MIT License](LICENSE), which means you're fr
 - **Description:** The robot moves at a velocity of 0.09 m/s, while the system estimates 0.08 m/s. The distance traveled was 0.8m, and the system measured 0.82m.
 
 <div class="media-container">
-  <div class="image-container">
-    <img src="./images/experiment-2/position.png" alt="Experiment 2 Position" width="320">
-  </div>
-  <div class="image-container">
-    <img src="./images/experiment-2/velocity.png" alt="Experiment 2 Velocity" width="320">
-  </div>
+  <p align="center">
+    <img src="./images/experiment-2.gif" alt="GIF Example">
+  </p>
+  <p align="center">Experiment 2 Video</p>
 
-  <div class="video-container">
-    <video width="320" height="240" controls>
-      <source src="./images/experiment-2/video.mp4" type="video/mp4">
-    </video>
-  </div>
 </div>
 
 ### Experiment 3
 
 - **Description:** The robot moves in circles, and its trajectory can be visualized using PlotJuggler.
 
-<video width="320" height="240" controls>
-  <source src="./images/experiment-3/video.mp4" type="video/webm">
-</video>
+<div class="media-container">
+  <p align="center">
+    <img src="./images/experiment-3.gif" alt="GIF Example">
+  </p>
+  <p align="center">Experiment 3 Video</p>
 
-<video width="320" height="240" controls>
-  <source src="./images/experiment-3/position.mp4" type="video/webm">
-</video>
+</div>
 
 ## Installation
 
