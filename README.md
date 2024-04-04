@@ -8,7 +8,6 @@
 Pointcloud Motion Capture is a ROS 2 package designed to process point clouds for capturing object movements. It detects objects using color filters and infers data about their position, velocity, and acceleration. 
 This package has been tested under [ROS] Humble and Ubuntu 22.04
 
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE), which means you're free to use, copy, and modify the code, subject to certain conditions. See the LICENSE file for more details.
@@ -16,6 +15,59 @@ This project is licensed under the [MIT License](LICENSE), which means you're fr
 **Author:** João Vitor S. Mendes\
 **Affiliation:** Brazilian Institute of Robotics - BIR (SENAI CIMATEC)\
 **Maintainer:** João Vitor S. Mendes, vitor.mendes@ieee.org
+
+## Validation
+
+### Experiment 1
+
+- **Description:** The robot moves at a velocity of 0.05 m/s, while the system estimates 0.04 m/s. The distance traveled was 0.8m, and the system measured 0.82m.
+
+<div class="media-container">
+  <div class="image-container">
+    <img src="./images/experiment-1/position.png" alt="Experiment 1 Position" width="320">
+  </div>
+  <div class="image-container">
+    <img src="./images/experiment-1/velocity.png" alt="Experiment 1 Velocity" width="320">
+  </div>
+
+  <div class="video-container">
+    <video width="320" height="240" controls>
+      <source src="./images/experiment-1/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+### Experiment 2
+
+- **Description:** The robot moves at a velocity of 0.09 m/s, while the system estimates 0.08 m/s. The distance traveled was 0.8m, and the system measured 0.82m.
+
+<div class="media-container">
+  <div class="image-container">
+    <img src="./images/experiment-2/position.png" alt="Experiment 2 Position" width="320">
+  </div>
+  <div class="image-container">
+    <img src="./images/experiment-2/velocity.png" alt="Experiment 2 Velocity" width="320">
+  </div>
+
+  <div class="video-container">
+    <video width="320" height="240" controls>
+      <source src="./images/experiment-2/video.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+### Experiment 3
+
+- **Description:** The robot moves in circles, and its trajectory can be visualized using PlotJuggler.
+
+<video width="320" height="240" controls>
+  <source src="./images/experiment-3/video.mp4" type="video/webm">
+</video>
+
+<video width="320" height="240" controls>
+  <source src="./images/experiment-3/position.mp4" type="video/webm">
+</video>
 
 ## Installation
 
