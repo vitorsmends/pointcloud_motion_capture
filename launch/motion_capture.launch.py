@@ -16,7 +16,7 @@ def generate_launch_description():
 
         Node(
             package='pointcloud_motion_capture',
-            executable='object_detection', 
+            executable='motion_capture', 
             output='screen',
         ),
     ])
