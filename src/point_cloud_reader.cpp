@@ -12,6 +12,15 @@
 #include <pcl/point_types.h>
 #include <pcl/point_cloud.h>
 
+struct ColorThresholds {
+    int lower_red;
+    int upper_red;
+    int lower_green;
+    int upper_green;
+    int lower_blue;
+    int upper_blue;
+};
+
 class PointCloudProcessor : public rclcpp::Node {
   public:
     PointCloudProcessor() : Node("point_cloud_processor") {
@@ -36,13 +45,15 @@ class PointCloudProcessor : public rclcpp::Node {
             ament_index_cpp::get_package_share_directory(
                 "pointcloud_motion_capture") +
             "/config/colors.yaml";
-        std::cout << yaml_file_path << std::endl;
 
         YAML::Node config = YAML::LoadFile(yaml_file_path);
 
-        red_threshold_ = config["red_threshold"].as<int>();
-        green_threshold_ = config["green_threshold"].as<int>();
-        blue_threshold_ = config["blue_threshold"].as<int>();
+        color_thresholds_.lower_red = config["orange"]["lower_red"].as<int>();
+        color_thresholds_.upper_red = config["orange"]["upper_red"].as<int>();
+        color_thresholds_.lower_green = config["orange"]["lower_green"].as<int>();
+        color_thresholds_.upper_green = config["orange"]["upper_green"].as<int>();
+        color_thresholds_.lower_blue = config["orange"]["lower_blue"].as<int>();
+        color_thresholds_.upper_blue = config["orange"]["upper_blue"].as<int>();
     }
 
     void pointCloudCallback(
@@ -54,8 +65,16 @@ class PointCloudProcessor : public rclcpp::Node {
         pcl::PointCloud<pcl::PointXYZRGB>::Ptr filtered_cloud(
             new pcl::PointCloud<pcl::PointXYZRGB>());
         for (const auto& point : *pcl_cloud) {
-            if (point.r > red_threshold_ && point.g < green_threshold_ &&
-                point.b < blue_threshold_) {
+            int r = point.r;
+            int g = point.g;
+            int b = point.b;
+
+            if (r >= color_thresholds_.lower_red &&
+                r <= color_thresholds_.upper_red &&
+                g >= color_thresholds_.lower_green &&
+                g <= color_thresholds_.upper_green &&
+                b >= color_thresholds_.lower_blue &&
+                b <= color_thresholds_.upper_blue) {
                 filtered_cloud->push_back(point);
             }
         }
@@ -72,9 +91,7 @@ class PointCloudProcessor : public rclcpp::Node {
         subscription_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr publisher_;
 
-    int red_threshold_;
-    int green_threshold_;
-    int blue_threshold_;
+    ColorThresholds color_thresholds_;
 };
 
 int main(int argc, char** argv) {

@@ -23,13 +23,13 @@ class MotionCapture : public rclcpp::Node {
                 std::bind(&MotionCapture::pointCloudCallback, this,
                           std::placeholders::_1));
         position_publisher_ = this->create_publisher<geometry_msgs::msg::Point>(
-            "object_position", 10);
+            "/object/position", 10);
         velocity_publisher_ =
             this->create_publisher<geometry_msgs::msg::Vector3>(
-                "object_velocity", 10);
+                "/object/velocity", 10);
         acceleration_publisher_ =
             this->create_publisher<geometry_msgs::msg::Vector3>(
-                "object_acceleration", 10);
+                "/object/acceleration", 10);
 
         timer_ = this->create_wall_timer(
             std::chrono::milliseconds(static_cast<int>(1000.0 / publish_rate_)),
