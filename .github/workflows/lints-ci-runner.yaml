@@ -31,7 +31,7 @@ jobs:
         distro:  [humble]
         ubuntu:  [jammy]
         package: [pointcloud_motion_capture]
-    runs-on: [self-hosted, colcon-hosted, linux, x64]
+    runs-on: ubuntu-latest
     container:
       image: rostooling/setup-ros-docker:ubuntu-${{ matrix.ubuntu }}-latest
     steps:
