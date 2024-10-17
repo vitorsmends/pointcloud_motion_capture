@@ -1,9 +1,5 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.12)
 project(pointcloud_motion_capture)
-
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
@@ -61,15 +57,13 @@ install(DIRECTORY
 )
 
 if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  set(ament_cmake_cppcheck_FOUND TRUE)
+  list(APPEND AMENT_LINT_AUTO_EXCLUDE ament_cmake_cpplint)
   find_package(ament_cmake_cpplint REQUIRED)
-  find_package(ament_cmake_cppcheck REQUIRED)
-  find_package(ament_cmake_flake8 REQUIRED)
-  find_package(ament_cmake_pep257 REQUIRED)
-
-  ament_cpplint()
-  ament_cppcheck()
-  ament_flake8()
-  ament_pep257()
+  ament_cpplint(MAX_LINE_LENGTH "120")
+  ament_lint_auto_find_test_dependencies()
 endif()
+
 
 ament_package()

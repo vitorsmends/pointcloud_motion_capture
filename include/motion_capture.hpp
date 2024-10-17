@@ -3,18 +3,18 @@
 #ifndef MOTION_CAPTURE_HPP_
 #define MOTION_CAPTURE_HPP_
 
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
+#include <pcl/common/centroid.h>
+
+#include <queue>
+
+#include <Eigen/Core>
 #include <pcl_conversions/pcl_conversions.h>
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/point_cloud2.hpp>
 #include <geometry_msgs/msg/point.hpp>
 #include <geometry_msgs/msg/vector3.hpp>
-
-#include <pcl/point_cloud.h>
-#include <pcl/point_types.h>
-#include <pcl/common/centroid.h>
-#include <Eigen/Core>
-
-#include <queue>
 
 class MotionCapture : public rclcpp::Node
 {
