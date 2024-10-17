@@ -1,3 +1,5 @@
+// Copyright 2024 João Vitor Silva Mendes
+
 #include "motion_capture.hpp"
 
 MotionCapture::MotionCapture()

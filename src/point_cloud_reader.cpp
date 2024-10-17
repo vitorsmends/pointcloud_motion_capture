@@ -1,3 +1,5 @@
+// Copyright 2024 João Vitor Silva Mendes
+
 #include "point_cloud_reader.hpp"
 
 namespace pointcloud_motion_capture
@@ -65,7 +67,7 @@ void PointCloudProcessor::pointCloudCallback(const sensor_msgs::msg::PointCloud2
   publisher_->publish(filtered_msg_);
 }
 
-} // namespace pointcloud_motion_capture
+}  // namespace pointcloud_motion_capture
 
 int main(int argc, char ** argv)
 {

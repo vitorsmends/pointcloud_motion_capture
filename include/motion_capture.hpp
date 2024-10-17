@@ -1,16 +1,20 @@
-#ifndef MOTION_CAPTURE_HPP
-#define MOTION_CAPTURE_HPP
+// Copyright 2024 João Vitor Silva Mendes
+
+#ifndef MOTION_CAPTURE_HPP_
+#define MOTION_CAPTURE_HPP_
+
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
+#include <pcl/common/centroid.h>
+#include <pcl_conversions/pcl_conversions.h>
+
+#include <Eigen/Core>
+#include <queue>
 
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/point_cloud2.hpp>
 #include <geometry_msgs/msg/point.hpp>
 #include <geometry_msgs/msg/vector3.hpp>
-#include <pcl_conversions/pcl_conversions.h>
-#include <pcl/point_cloud.h>
-#include <pcl/point_types.h>
-#include <pcl/common/centroid.h>
-#include <queue>
-#include <Eigen/Core>
 
 class MotionCapture : public rclcpp::Node
 {
@@ -44,4 +48,4 @@ private:
   rclcpp::TimerBase::SharedPtr timer_;
 };
 
-#endif // MOTION_CAPTURE_HPP
+#endif  // MOTION_CAPTURE_HPP_
