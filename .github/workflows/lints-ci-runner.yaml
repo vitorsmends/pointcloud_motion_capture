@@ -1,0 +1,51 @@
+# This file configures a set of analyzers, which statically check code and configuration files
+# using the following tools copyright, cppcheck, cpplint, gtest, lint_cmake, linter, uncrustify,
+# xmllint. These tools look for formation errors, patterns and other warnings.
+#
+# Checkout This action checks-out your repository under $GITHUB_WORKSPACE,
+# so your workflow can access it.
+# https://github.com/actions/checkout
+# https://github.com/marketplace/actions/checkout
+#
+# ROS 2 Tooling Working Group
+# Github action to run linters on ROS 2 packages
+# https://github.com/ros-tooling/action-ros-lint
+# rostooling/setup-ros-docker:ubuntu-jammy-ros-humble-desktop-latest
+# https://github.com/ros-tooling/setup-ros-docker
+# https://hub.docker.com/r/rostooling/setup-ros-docker/tags
+
+name: lints-ci-runner
+
+on: [pull_request, workflow_dispatch]
+
+env:
+  AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS: true
+
+jobs:
+  ament_lint_general:
+    name: ament_${{ matrix.linter }}
+    strategy:
+      fail-fast: false
+      matrix:
+        linter:  [copyright, cppcheck, cpplint, lint_cmake, uncrustify, xmllint, flake8, pep257]
+        distro:  [humble]
+        ubuntu:  [jammy]
+        package: [softrobots_teleop]
+    runs-on: [self-hosted, colcon-hosted, linux, x64]
+    container:
+      image: rostooling/setup-ros-docker:ubuntu-${{ matrix.ubuntu }}-latest
+    steps:
+    -
+      if: ${{ matrix.linter == 'cpplint' }}
+      name: Set env ${{ matrix.linter }}
+      run: |
+          echo "LINT_ARGUMENTS=--linelength=120" >> $GITHUB_ENV
+
+    - uses: actions/checkout@v4
+    - uses: ros-tooling/setup-ros@0.7.5
+    - uses: ros-tooling/action-ros-lint@master
+      with:
+        linter: ${{ matrix.linter }}
+        distribution: ${{ matrix.distro }}
+        package-name: ${{ matrix.package }}
+        arguments: ${{ env.LINT_ARGUMENTS }}
