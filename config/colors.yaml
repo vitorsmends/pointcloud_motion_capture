@@ -1,8 +1,0 @@
-pointcloud_motion_capture:
-  ros__parameters:
-    point_cloud_topic_raw: "/camera/camera/depth/color/points"
-    point_cloud_topic_filtered: "/point_cloud/filtered"
-    update_rate: 10.0 # Hz
-    red_threshold: 40
-    green_threshold: 30
-    blue_threshold: 30

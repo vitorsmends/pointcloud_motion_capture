@@ -1,0 +1,8 @@
+point_cloud_processor:
+  ros__parameters:
+    red_threshold: 50
+    green_threshold: 30
+    blue_threshold: 30
+    update_rate: 10.0
+    point_cloud_topic_raw: "/camera/camera/depth/color/points"
+    point_cloud_topic_filtered: "/point_cloud/filtered"
