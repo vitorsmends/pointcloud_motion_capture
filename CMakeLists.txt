@@ -27,7 +27,7 @@ ament_target_dependencies(point_cloud_reader
   pcl_conversions
 )
 
-ament_target_dependencies(motion_capture 
+ament_target_dependencies(motion_capture
   rclcpp
   sensor_msgs
   geometry_msgs

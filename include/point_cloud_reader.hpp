@@ -3,18 +3,18 @@
 #ifndef POINT_CLOUD_READER_HPP_
 #define POINT_CLOUD_READER_HPP_
 
+#include "pcl_conversions/pcl_conversions.h"
+#include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/point_cloud2.hpp"
+#include "ament_index_cpp/get_package_share_directory.hpp"
+
 #include <pcl/point_types.h>
 #include <pcl/point_cloud.h>
-#include "pcl_conversions/pcl_conversions.h"
 #include <yaml-cpp/yaml.h>
 
 #include <memory>
 #include <string>
 #include <fstream>
-
-#include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/msg/point_cloud2.hpp"
-#include "ament_index_cpp/get_package_share_directory.hpp"
 
 namespace pointcloud_motion_capture
 {
