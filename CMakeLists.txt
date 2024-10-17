@@ -61,8 +61,15 @@ install(DIRECTORY
 )
 
 if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  ament_lint_auto_find_test_dependencies()
+  find_package(ament_cmake_cpplint REQUIRED)
+  find_package(ament_cmake_cppcheck REQUIRED)
+  find_package(ament_cmake_flake8 REQUIRED)
+  find_package(ament_cmake_pep257 REQUIRED)
+
+  ament_cpplint()
+  ament_cppcheck()
+  ament_flake8()
+  ament_pep257()
 endif()
 
 ament_package()
