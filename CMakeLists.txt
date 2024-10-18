@@ -1,9 +1,5 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.12)
 project(pointcloud_motion_capture)
-
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
@@ -21,25 +17,25 @@ include_directories(
 add_executable(point_cloud_reader src/point_cloud_reader.cpp)
 add_executable(motion_capture src/motion_capture.cpp)
 
-ament_target_dependencies(point_cloud_reader 
-  rclcpp 
-  sensor_msgs 
+ament_target_dependencies(point_cloud_reader
+  rclcpp
+  sensor_msgs
   pcl_conversions
 )
 
-ament_target_dependencies(motion_capture 
-  rclcpp 
-  sensor_msgs 
-  geometry_msgs 
+ament_target_dependencies(motion_capture
+  rclcpp
+  sensor_msgs
+  geometry_msgs
   pcl_conversions
 )
 
-target_link_libraries(point_cloud_reader 
+target_link_libraries(point_cloud_reader
   ${PCL_LIBRARIES}
   ${YAML_CPP_LIBRARIES}
 )
 
-target_link_libraries(motion_capture 
+target_link_libraries(motion_capture
   ${PCL_LIBRARIES}
   ${YAML_CPP_LIBRARIES}
 )
@@ -62,7 +58,12 @@ install(DIRECTORY
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
+  set(ament_cmake_cppcheck_FOUND TRUE)
+  list(APPEND AMENT_LINT_AUTO_EXCLUDE ament_cmake_cpplint)
+  find_package(ament_cmake_cpplint REQUIRED)
+  ament_cpplint(MAX_LINE_LENGTH "120")
   ament_lint_auto_find_test_dependencies()
 endif()
+
 
 ament_package()
