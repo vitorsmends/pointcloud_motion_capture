@@ -32,7 +32,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "Kyle's Doxygen Test"
+PROJECT_NAME           = "PointCloud Motion Capture"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
@@ -44,14 +44,14 @@ PROJECT_NUMBER         =
 # for a project that appears at the top of each page and should give viewer a
 # quick idea about the purpose of the project. Keep the description short.
 
-PROJECT_BRIEF          = "This is just a test of Doxygen"
+PROJECT_BRIEF          = "Pointcloud Motion Capture is a ROS 2 package designed to process point clouds for capturing object movements. It detects objects using color filters and infers data about their position, velocity, and acceleration. This package has been tested under [ROS] Humble and Ubuntu 22.04"
 
 # With the PROJECT_LOGO tag one can specify a logo or an icon that is included
 # in the documentation. The maximum height of the logo should not exceed 55
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = "./DiConIcon.ico"
+PROJECT_LOGO           = "./images/logo.png"
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is
