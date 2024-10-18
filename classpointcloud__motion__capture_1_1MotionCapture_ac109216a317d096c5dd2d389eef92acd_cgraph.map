@@ -1,0 +1,5 @@
+<map id="pointcloud_motion_capture::MotionCapture::pointCloudCallback" name="pointcloud_motion_capture::MotionCapture::pointCloudCallback">
+<area shape="rect" id="Node000001" title="Callback function for processing incoming PointCloud2 messages." alt="" coords="5,13,234,54"/>
+<area shape="rect" id="Node000002" href="$classpointcloud__motion__capture_1_1MotionCapture.html#a334bd4d37cca9734ed03556a954db329" title="Updates the position samples queue with a new centroid value." alt="" coords="282,5,485,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,30,266,30,266,36,234,36"/>
+</map>

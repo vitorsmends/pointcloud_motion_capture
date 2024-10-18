@@ -1,0 +1,21 @@
+<map id="include/point_cloud_reader.hpp" name="include/point_cloud_reader.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="503,5,636,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,142,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="503,39,350,62,158,96,157,91,349,57,502,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="166,102,285,127"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="504,46,298,97,286,100,285,95,297,91,502,40"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="309,102,427,127"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="525,49,411,98,409,93,523,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="452,102,519,127"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="552,48,510,92,506,89,549,45"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="543,102,596,127"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="572,47,572,86,567,86,567,47"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="621,102,686,127"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="590,45,633,89,629,92,587,48"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="710,102,829,127"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="616,44,729,93,727,98,614,49"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="853,94,1014,135"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="637,40,839,88,838,93,636,45"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1038,94,1234,135"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="636,34,1023,91,1022,96,636,39"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,46,99,72"/>
+<area shape="rect" id="Node000001" href="$classpointcloud__motion__capture_1_1MotionCapture.html" title=" " alt="" coords="147,5,323,46"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="114,45,146,39,147,44,115,50"/>
+<area shape="rect" id="Node000002" href="$classpointcloud__motion__capture_1_1PointCloudProcessor.html" title=" " alt="" coords="147,71,323,111"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="115,67,147,73,146,78,114,72"/>
+</map>

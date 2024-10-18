@@ -1,0 +1,7 @@
+<map id="pointcloud_motion_capture::PointCloudProcessor::PointCloudProcessor" name="pointcloud_motion_capture::PointCloudProcessor::PointCloudProcessor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,45,182,101"/>
+<area shape="rect" id="Node000002" href="$classpointcloud__motion__capture_1_1PointCloudProcessor.html#a6f110cb11200d4e7a5c83560a05bb172" title="Loads parameters from the ROS2 parameter server." alt="" coords="230,5,406,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,55,213,49,214,54,182,60"/>
+<area shape="rect" id="Node000003" href="$classpointcloud__motion__capture_1_1PointCloudProcessor.html#abb95bd35e91423dcd899d3e005bcd33c" title="Callback function for processing incoming point cloud data." alt="" coords="230,85,406,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,86,214,92,213,97,181,91"/>
+</map>

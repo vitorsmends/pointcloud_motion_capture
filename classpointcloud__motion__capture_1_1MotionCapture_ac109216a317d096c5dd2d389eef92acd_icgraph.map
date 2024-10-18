@@ -1,0 +1,5 @@
+<map id="pointcloud_motion_capture::MotionCapture::pointCloudCallback" name="pointcloud_motion_capture::MotionCapture::pointCloudCallback">
+<area shape="rect" id="Node000001" title="Callback function for processing incoming PointCloud2 messages." alt="" coords="255,5,483,46"/>
+<area shape="rect" id="Node000002" href="$classpointcloud__motion__capture_1_1MotionCapture.html#a9b7ffa90ac8882c566dd9c521b2b1070" title="Constructor for the MotionCapture class." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,28,207,28,207,23,239,23"/>
+</map>

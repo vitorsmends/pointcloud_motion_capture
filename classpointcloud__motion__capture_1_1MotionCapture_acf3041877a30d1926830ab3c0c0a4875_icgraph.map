@@ -1,0 +1,7 @@
+<map id="pointcloud_motion_capture::MotionCapture::publishAcceleration" name="pointcloud_motion_capture::MotionCapture::publishAcceleration">
+<area shape="rect" id="Node000001" title="Publishes the object&#39;s acceleration to a ROS topic." alt="" coords="488,5,718,46"/>
+<area shape="rect" id="Node000002" href="$classpointcloud__motion__capture_1_1MotionCapture.html#a15fd3009fde1a138b8a91025599d4afe" title="Publishes the calculated position, velocity, and acceleration." alt="" coords="255,5,440,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="472,28,441,28,441,23,472,23"/>
+<area shape="rect" id="Node000003" href="$classpointcloud__motion__capture_1_1MotionCapture.html#a9b7ffa90ac8882c566dd9c521b2b1070" title="Constructor for the MotionCapture class." alt="" coords="5,5,207,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="239,28,207,28,207,23,239,23"/>
+</map>

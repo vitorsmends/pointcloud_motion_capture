@@ -1,0 +1,15 @@
+<map id="pointcloud_motion_capture::MotionCapture::publishData" name="pointcloud_motion_capture::MotionCapture::publishData">
+<area shape="rect" id="Node000001" title="Publishes the calculated position, velocity, and acceleration." alt="" coords="5,169,191,210"/>
+<area shape="rect" id="Node000002" href="$classpointcloud__motion__capture_1_1MotionCapture.html#a30075cd00e1c61ba5fc1f96fd6819dcf" title="Retrieves the filtered position of the object." alt="" coords="241,5,466,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,167,165,112,200,82,237,57,251,50,253,55,240,61,203,87,169,116,118,171"/>
+<area shape="rect" id="Node000003" href="$classpointcloud__motion__capture_1_1MotionCapture.html#a667866c7b1c0a80114ae91ed570137e7" title="Retrieves the filtered velocity of the object." alt="" coords="242,71,466,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,166,238,122,260,114,262,119,240,127,141,171"/>
+<area shape="rect" id="Node000004" href="$classpointcloud__motion__capture_1_1MotionCapture.html#acf3041877a30d1926830ab3c0c0a4875" title="Publishes the object&#39;s acceleration to a ROS topic." alt="" coords="239,136,469,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="191,175,223,171,223,176,191,180"/>
+<area shape="rect" id="Node000005" href="$classpointcloud__motion__capture_1_1MotionCapture.html#ac2e4ce6f0eca5b0cd98b2c93626eb5aa" title="Publishes the object&#39;s position to a ROS topic." alt="" coords="251,201,456,242"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="191,199,236,204,236,210,191,204"/>
+<area shape="rect" id="Node000006" href="$classpointcloud__motion__capture_1_1MotionCapture.html#a4bc83af20b6877a846c1f47c884ff93c" title="Publishes the object&#39;s velocity to a ROS topic." alt="" coords="252,267,456,307"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="142,208,240,251,262,259,260,264,238,256,140,213"/>
+<area shape="rect" id="Node000007" href="$classpointcloud__motion__capture_1_1MotionCapture.html#acaa6339a9724ea4388a727b4eb781cc4" title="Updates the velocity samples queue with a new velocity value." alt="" coords="253,331,455,387"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="119,209,170,262,204,291,240,317,249,322,246,326,237,321,200,295,166,266,115,212"/>
+</map>
