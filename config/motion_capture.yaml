@@ -1,0 +1,10 @@
+motion_capture:
+  ros__parameters:
+    point_cloud_topic_filtered: "/point_cloud/filtered"
+    position_publish_topic: "/object_position"
+    velocity_publish_topic: "/object_velocity"
+    acceleration_publish_topic: "/object_acceleration"
+    position_samples: 5
+    velocity_samples: 5
+    publish_rate: 10.0
+    queue_size: 10
