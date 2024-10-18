@@ -68,8 +68,6 @@ To successfully compile and run this ROS 2 package, ensure that you have the fol
 
 - **PCL (Point Cloud Library)**: PCL is a powerful open-source library for 3D point cloud processing. You can download and install PCL from the [official PCL website](https://pointclouds.org/downloads/).
 
-- **yaml-cpp**: yaml-cpp is a YAML parser and emitter in C++. You can find the source code and installation instructions on the [yaml-cpp GitHub repository](https://github.com/jbeder/yaml-cpp).
-
 ### Install dependencies and Building
 ```bash
 cd <your_ros2_workspace>
